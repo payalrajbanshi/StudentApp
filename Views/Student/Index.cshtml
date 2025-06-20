@@ -1,0 +1,39 @@
+@model IEnumerable<StudentApp.Models.Student>
+
+@{
+    ViewData["Title"] = "Students List";
+}
+
+<h2>Students</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Phone</td>
+                <td>@student.Address</td>
+                <td>@student.Gender</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Student", new { id = student.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", "Student", new { id = student.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Student")" class="btn btn-primary">Add Student</a>
+
