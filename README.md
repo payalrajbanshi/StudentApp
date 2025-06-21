@@ -1,4 +1,4 @@
-# StudentApp 🎓
+# StudentApp 
 
 This is a mini project built using ASP.NET MVC that performs basic **CRUD (Create, Read, Update, Delete)** operations for managing student records.
 
