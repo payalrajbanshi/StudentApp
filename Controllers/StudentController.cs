@@ -22,14 +22,12 @@ namespace StudentApp.Controllers
             var students = _context.Students.ToList();
             return View(students);
         }
-
         // GET: Create
         public IActionResult Create()
         {
             ViewData["GenderList"] = new SelectList(new[] { "Male", "Female", "Other" });
             return View();
         }
-
         // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -45,7 +43,6 @@ namespace StudentApp.Controllers
             ViewData["GenderList"] = new SelectList(new[] { "Male", "Female", "Other" });
             return View(student);
         }
-
         // GET: Edit
         public IActionResult Edit(int id)
         {
@@ -58,7 +55,6 @@ namespace StudentApp.Controllers
             ViewData["GenderList"] = new SelectList(new[] { "Male", "Female", "Other" }, student.Gender);
             return View(student);
         }
-
         // POST: Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -74,7 +70,6 @@ namespace StudentApp.Controllers
             ViewData["GenderList"] = new SelectList(new[] { "Male", "Female", "Other" }, student.Gender);
             return View(student);
         }
-
         // GET: Details
         public IActionResult Details(int id)
         {
@@ -85,7 +80,6 @@ namespace StudentApp.Controllers
             }
             return View(student);
         }
-
         // GET: Delete
         public IActionResult Delete(int id)
         {
@@ -96,7 +90,6 @@ namespace StudentApp.Controllers
             }
             return View(student);
         }
-
         // POST: Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
