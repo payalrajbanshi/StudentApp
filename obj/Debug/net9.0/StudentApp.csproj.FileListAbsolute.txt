@@ -222,3 +222,4 @@ C:\Users\Acer\OneDrive\Desktop\StudentApp\obj\Debug\net9.0\StudentApp.pdb
 C:\Users\Acer\OneDrive\Desktop\StudentApp\obj\Debug\net9.0\StudentApp.genruntimeconfig.cache
 C:\Users\Acer\OneDrive\Desktop\StudentApp\obj\Debug\net9.0\ref\StudentApp.dll
 C:\Users\Acer\OneDrive\Desktop\StudentApp\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Acer\OneDrive\Desktop\StudentApp\obj\Debug\net9.0\StudentApp.sourcelink.json

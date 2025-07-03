@@ -4,7 +4,7 @@ namespace StudentApp.Models
 {
     public class Student
     {
-        
+
         public int Id { get; set; }
 
         [Required]
@@ -21,5 +21,6 @@ namespace StudentApp.Models
 
         [Required]
         public string Gender { get; set; }
+        public string Faculty { get; set; } 
     }
 }
